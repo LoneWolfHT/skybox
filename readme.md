@@ -36,6 +36,8 @@ The `skybox` handle can be used to perform various actions:
 `skybox.add(skyboxdef)`
  -- Add a new skybox with skyboxdef to the list of available skyboxes.
 
+`skybox.get_skies()`
+  -- Get a list of availiable skyboxes (List items are in skyboxdef format)
 
 ```
 skyboxdef = {
@@ -45,3 +47,4 @@ skyboxdef = {
 	    -- "Right", Followed by ".jpg" as the file name.
 	[2] -- Sky color (colorstring)
 	[3] -- Day/Night ratio value (float - [0.0, 1.0])
+	[4] -- Cloud options passed to player:set_clouds()
